@@ -1,17 +1,19 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
+
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './components/header/header.component';
-import { FooterComponent } from './components/footer/footer.component';
-import { FormsComponent } from './components/forms/forms.component';
-import { SliderComponent } from './components/slider/slider.component';
-import { SidebarComponent } from './components/sidebar/sidebar.component';
-import { RelojComponent } from './components/reloj/reloj.component';
-import { InfoComponent } from './components/info/info.component';
+import { HeaderComponent } from './shared/components/header/header.component';
+import { FooterComponent } from './shared/components/footer/footer.component';
+import { FormsComponent } from './components/pages/landingPages/forms/forms.component';
+import { SliderComponent } from './components/pages/landingPages/slider/slider.component';
+import { SidebarComponent } from './components/pages/landingPages/sidebar/sidebar.component';
+import { RelojComponent } from './components/pages/reloj/reloj.component';
+import { InfoComponent } from './components/pages/info/info.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
+import { AppRoutingModule } from './app-routing.module';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,11 +27,14 @@ import { MaterialModule } from './material.module';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    AppRoutingModule
+
+
+
   ],
-  providers: [],
+  providers: [ ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

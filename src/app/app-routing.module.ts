@@ -1,10 +1,44 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { CommonModule } from '@angular/common';
+import { Routes, RouterModule } from '@angular/router';
+import { SidebarComponent } from './components/pages/landingPages/sidebar/sidebar.component';
+import { RelojComponent } from './components/pages/reloj/reloj.component';
+import { InfoComponent } from './components/pages/info/info.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+
+
+		{
+			path:'', component: SidebarComponent
+		},
+
+		 {
+
+		 	path:'inicio', component: SidebarComponent
+		 },
+
+
+		  {
+
+		 	path:'reloj', component: RelojComponent
+		  },
+
+		  {
+
+		 	path:'detalles', component: InfoComponent
+		  }
+
+
+
+
+];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  declarations: [],
+  imports: [
+  	RouterModule.forRoot(routes),
+    CommonModule
+  ],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
