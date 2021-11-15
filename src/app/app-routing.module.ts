@@ -5,6 +5,8 @@ import { SidebarComponent } from './components/pages/landingPages/sidebar/sideba
 import { RelojComponent } from './components/pages/reloj/reloj.component';
 import { InfoComponent } from './components/pages/info/info.component';
 
+import { PruebaComponent } from './components/pages/prueba/prueba.component';
+
 const routes: Routes = [
 
 
@@ -26,6 +28,13 @@ const routes: Routes = [
 		  {
 
 		 	path:'detalles', component: InfoComponent
+		  },
+
+
+		  {
+
+		 	path:'usuarios', component: PruebaComponent
+		  
 		  }
 
 
