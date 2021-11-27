@@ -51,3 +51,9 @@ export interface ResquestResponse {
     url:  string;
     text: string;
 }
+/*usuario*/
+
+export interface ResponseI{
+  token:string;
+  status:string;
+}

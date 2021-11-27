@@ -1,33 +1,63 @@
 <!---logo-->
-<div class="row">
-<div class="logo fs-2 w-75 pt-3 shadow  rounded">Blog de videos juegos
-<img src="../../../assets/IMG/logo3.png" class="rounded float-end" alt="Logo">
+<div class="logo w-50  shadow  rounded">
+<div class="row m-3 pt-3">
+  <div class="col-12">
+    <div class="col-6">
+      <img src="../../../assets/IMG/logo3.png" class="rounded" alt="Logo">
+        </div>
+      <div class="col-6">
+        <p class="fst-italic">Blog de videos juegos <mat-icon aria-hidden="false" aria-label="Example calendar icon">
+          smart_toy
+          </mat-icon></p>
+      </div>
+
+  </div>
 </div>
+
+
+
+
 </div>
+
+
 <!---menu-->
-<nav class="mt-2 navbar navbar-expand-lg navbar-light bg-dark shadow  rounded">
-    <div class=" m-2 collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav  mb-1">
 
-        <li class="nav-item">
-          <a routerLink="/inicio" class="nav-link  text-light fs-5" aria-current="page">Inicio</a>
+<nav class="navbar navbar-expand-lg navbar-dark mt-2 ">
+  <div class="container-fluid">
+
+    <div class="collapse navbar-collapse m-2" id="navbarNavDarkDropdown">
+      <ul class="navbar-nav mb-1">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle"  id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+           Menu
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+            <li class="nav-item">
+              <a routerLink="/inicio" class="nav-link  text-light fs-6" aria-current="page">Inicio</a>
+            </li>
+
+               <li class="nav-item">
+          <a routerLink="/reloj"  class="nav-link  text-light fs-6" aria-current="page" >Reloj</a>
+                </li>
+
+                <li class="nav-item">
+                  <a routerLink="/detalles" class="nav-link text-light fs-6" aria-current="page">Sobre los Videos juegos</a>
+                </li>
+
+
+                <li class="nav-item">
+                  <a routerLink="/usuarios" class="nav-link text-light fs-6" aria-current="page">Usuarios</a>
+                </li>
+
+          </ul>
         </li>
-       
-        <li class="nav-item">
-          <a routerLink="/reloj" class="nav-link  text-light fs-5" aria-current="page" >Reloj</a>
-        </li>
-
-        <li class="nav-item">
-          <a routerLink="/detalles" class="nav-link text-light fs-5" aria-current="page">Sobre los Videos juegos</a>
-        </li>
-
-
-
-        <li class="nav-item">
-          <a routerLink="/usuarios" class="nav-link text-light fs-5" aria-current="page">Usuarios</a>
-        </li>
-       
       </ul>
-     
     </div>
- 
+  </div>
+</nav>
+
+
+
+
+
+

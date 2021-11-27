@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-declare function Reloj(): void;
+//declare function actualizacionHora(): void;
 
 @Component({
   selector: 'app-root',
@@ -11,7 +11,7 @@ export class AppComponent {
   title = 'BlogVideosJuegos';
 
 constructor(){
-Reloj();
+ // actualizacionHora();
 
 }
 
