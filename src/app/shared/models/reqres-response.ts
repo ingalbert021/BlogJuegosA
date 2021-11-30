@@ -55,5 +55,5 @@ export interface ResquestResponse {
 
 export interface ResponseI{
   token:string;
-  status:string;
+  status:any;
 }

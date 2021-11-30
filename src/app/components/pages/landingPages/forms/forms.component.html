@@ -9,6 +9,26 @@
 
 
     <p class="fst-italic fs-3">Identificate</p>
+    <p class= "fst-italic">
+      Usuario de invitado:tracey.ramos@reqres.in contraseña:1234
+     </p>
+     <hr>
+    <div *ngIf="validacion == 'logeado' ">
+
+      <div class="alert alert-success" role="alert">
+        <h4>logeado, Correctamente</h4>
+      </div>
+
+    </div>
+
+    <div *ngIf="validacion == 'error' ">
+
+      <div class="alert alert-danger" role="alert">
+        <h4>Error de autentificacion, Los datos no coinciden</h4>
+      </div>
+
+    </div>
+
     <form>
 
 <form [formGroup]="loginForm" (ngSubmit)="onLogin(loginForm.value)">

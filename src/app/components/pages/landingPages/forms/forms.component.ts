@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { UsuariosService } from '../../../../shared/services/usuarios.service';
-import { LoginI } from '../../../../shared/models/index';
+import { LoginI, ResponseI } from '../../../../shared/models/index';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 @Component({
   selector: 'app-forms',
@@ -8,6 +8,7 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
   styleUrls: ['./forms.component.css']
 })
 export class FormsComponent implements OnInit {
+  public validacion:any;
 
   loginForm = new FormGroup({
     email : new FormControl('',Validators.required),
@@ -22,15 +23,34 @@ export class FormsComponent implements OnInit {
     this.myScriptElement.src = "../../../../../assets/js/javaScript.js";
     document.body.appendChild(this.myScriptElement);
   }
+
   ngOnInit(): void {
+
 
   }
 
   onLogin(form:LoginI){
     this.api.login(form).subscribe(data =>{
       console.log(data);
-    })
+       let dataResponse:ResponseI = data;
+
+      if(dataResponse.token == "QpwL5tke4Pnpja7X6"){
+
+        this.validacion = "logeado";
+        console.log(this.validacion);
+      }
+
+
+    });
+
+    if(this.validacion !== "logeado"){
+      this.validacion = "error";
+    };
   }
+
+
+
+
 
 
 }
