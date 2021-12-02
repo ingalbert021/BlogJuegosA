@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist/BlogVideosJuegos",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

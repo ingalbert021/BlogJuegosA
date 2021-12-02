@@ -12,13 +12,15 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './shared/components/header/header.component';
 import { FooterComponent } from './shared/components/footer/footer.component';
-import { FormsComponent } from './components/pages/landingPages/forms/forms.component';
+import { FormsComponent } from './components/pages/landingPages/forms/login/forms.component';
+import { EmailComponent } from './components/pages/landingPages/forms/email/email.component';
 import { SliderComponent } from './components/pages/landingPages/slider/slider.component';
 import { SidebarComponent } from './components/pages/landingPages/sidebar/sidebar.component';
 import { RelojComponent } from './components/pages/reloj/reloj.component';
 import { InfoComponent } from './components/pages/info/info.component';
 
 import { PruebaComponent } from './components/pages/prueba/prueba.component';
+
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import { PruebaComponent } from './components/pages/prueba/prueba.component';
     SidebarComponent,
     RelojComponent,
     InfoComponent,
-    PruebaComponent
+    PruebaComponent,
+    EmailComponent
+
   ],
   imports: [
     BrowserModule,
